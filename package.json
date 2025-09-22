@@ -1,0 +1,28 @@
+{
+    "name": "gtfs-to-postgres",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "module": "es2022",
+    "scripts": {
+        "build": "tsc;",
+        "start": "node dist/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.14.0",
+    "devDependencies": {
+        "@types/node": "^24.5.2",
+        "@types/pg": "^8.15.5",
+        "@types/pg-copy-streams": "^1.2.5",
+        "@types/unzipper": "^0.10.11",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.2",
+        "pg": "^8.16.3",
+        "pg-copy-streams": "^7.0.0",
+        "unzipper": "^0.12.3"
+    }
+}

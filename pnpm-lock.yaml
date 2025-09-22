@@ -1,0 +1,422 @@
+lockfileVersion: "9.0"
+
+settings:
+    autoInstallPeers: true
+    excludeLinksFromLockfile: false
+
+importers:
+    .:
+        dependencies:
+            dotenv:
+                specifier: ^17.2.2
+                version: 17.2.2
+            pg:
+                specifier: ^8.16.3
+                version: 8.16.3
+            pg-copy-streams:
+                specifier: ^7.0.0
+                version: 7.0.0
+            unzipper:
+                specifier: ^0.12.3
+                version: 0.12.3
+        devDependencies:
+            "@types/node":
+                specifier: ^24.5.2
+                version: 24.5.2
+            "@types/pg":
+                specifier: ^8.15.5
+                version: 8.15.5
+            "@types/pg-copy-streams":
+                specifier: ^1.2.5
+                version: 1.2.5
+            "@types/unzipper":
+                specifier: ^0.10.11
+                version: 0.10.11
+            typescript:
+                specifier: ^5.9.2
+                version: 5.9.2
+
+packages:
+    "@types/node@24.5.2":
+        resolution:
+            {
+                integrity: sha512-FYxk1I7wPv3K2XBaoyH2cTnocQEu8AOZ60hPbsyukMPLv5/5qr7V1i8PLHdl6Zf87I+xZXFvPCXYjiTFq+YSDQ==,
+            }
+
+    "@types/pg-copy-streams@1.2.5":
+        resolution:
+            {
+                integrity: sha512-7D6/GYW2uHIaVU6S/5omI+6RZnwlZBpLQDZAH83xX1rjxAOK0f6/deKyyUTewxqts145VIGn6XWYz1YGf50G5g==,
+            }
+
+    "@types/pg@8.15.5":
+        resolution:
+            {
+                integrity: sha512-LF7lF6zWEKxuT3/OR8wAZGzkg4ENGXFNyiV/JeOt9z5B+0ZVwbql9McqX5c/WStFq1GaGso7H1AzP/qSzmlCKQ==,
+            }
+
+    "@types/unzipper@0.10.11":
+        resolution:
+            {
+                integrity: sha512-D25im2zjyMCcgL9ag6N46+wbtJBnXIr7SI4zHf9eJD2Dw2tEB5e+p5MYkrxKIVRscs5QV0EhtU9rgXSPx90oJg==,
+            }
+
+    bluebird@3.7.2:
+        resolution:
+            {
+                integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==,
+            }
+
+    core-util-is@1.0.3:
+        resolution:
+            {
+                integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==,
+            }
+
+    dotenv@17.2.2:
+        resolution:
+            {
+                integrity: sha512-Sf2LSQP+bOlhKWWyhFsn0UsfdK/kCWRv1iuA2gXAwt3dyNabr6QSj00I2V10pidqz69soatm9ZwZvpQMTIOd5Q==,
+            }
+        engines: { node: ">=12" }
+
+    duplexer2@0.1.4:
+        resolution:
+            {
+                integrity: sha512-asLFVfWWtJ90ZyOUHMqk7/S2w2guQKxUI2itj3d92ADHhxUSbCMGi1f1cBcJ7xM1To+pE/Khbwo1yuNbMEPKeA==,
+            }
+
+    fs-extra@11.3.2:
+        resolution:
+            {
+                integrity: sha512-Xr9F6z6up6Ws+NjzMCZc6WXg2YFRlrLP9NQDO3VQrWrfiojdhS56TzueT88ze0uBdCTwEIhQ3ptnmKeWGFAe0A==,
+            }
+        engines: { node: ">=14.14" }
+
+    graceful-fs@4.2.11:
+        resolution:
+            {
+                integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==,
+            }
+
+    inherits@2.0.4:
+        resolution:
+            {
+                integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==,
+            }
+
+    isarray@1.0.0:
+        resolution:
+            {
+                integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==,
+            }
+
+    jsonfile@6.2.0:
+        resolution:
+            {
+                integrity: sha512-FGuPw30AdOIUTRMC2OMRtQV+jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbfOB/iy3ssJCD+3KuZ8r8C3uVFlAg==,
+            }
+
+    node-int64@0.4.0:
+        resolution:
+            {
+                integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==,
+            }
+
+    pg-cloudflare@1.2.7:
+        resolution:
+            {
+                integrity: sha512-YgCtzMH0ptvZJslLM1ffsY4EuGaU0cx4XSdXLRFae8bPP4dS5xL1tNB3k2o/N64cHJpwU7dxKli/nZ2lUa5fLg==,
+            }
+
+    pg-connection-string@2.9.1:
+        resolution:
+            {
+                integrity: sha512-nkc6NpDcvPVpZXxrreI/FOtX3XemeLl8E0qFr6F2Lrm/I8WOnaWNhIPK2Z7OHpw7gh5XJThi6j6ppgNoaT1w4w==,
+            }
+
+    pg-copy-streams@7.0.0:
+        resolution:
+            {
+                integrity: sha512-zBvnY6wtaBRE2ae2xXWOOGMaNVPkXh1vhypAkNSKgMdciJeTyIQAHZaEeRAxUjs/p1El5jgzYmwG5u871Zj3dQ==,
+            }
+
+    pg-int8@1.0.1:
+        resolution:
+            {
+                integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==,
+            }
+        engines: { node: ">=4.0.0" }
+
+    pg-pool@3.10.1:
+        resolution:
+            {
+                integrity: sha512-Tu8jMlcX+9d8+QVzKIvM/uJtp07PKr82IUOYEphaWcoBhIYkoHpLXN3qO59nAI11ripznDsEzEv8nUxBVWajGg==,
+            }
+        peerDependencies:
+            pg: ">=8.0"
+
+    pg-protocol@1.10.3:
+        resolution:
+            {
+                integrity: sha512-6DIBgBQaTKDJyxnXaLiLR8wBpQQcGWuAESkRBX/t6OwA8YsqP+iVSiond2EDy6Y/dsGk8rh/jtax3js5NeV7JQ==,
+            }
+
+    pg-types@2.2.0:
+        resolution:
+            {
+                integrity: sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==,
+            }
+        engines: { node: ">=4" }
+
+    pg@8.16.3:
+        resolution:
+            {
+                integrity: sha512-enxc1h0jA/aq5oSDMvqyW3q89ra6XIIDZgCX9vkMrnz5DFTw/Ny3Li2lFQ+pt3L6MCgm/5o2o8HW9hiJji+xvw==,
+            }
+        engines: { node: ">= 16.0.0" }
+        peerDependencies:
+            pg-native: ">=3.0.1"
+        peerDependenciesMeta:
+            pg-native:
+                optional: true
+
+    pgpass@1.0.5:
+        resolution:
+            {
+                integrity: sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug==,
+            }
+
+    postgres-array@2.0.0:
+        resolution:
+            {
+                integrity: sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==,
+            }
+        engines: { node: ">=4" }
+
+    postgres-bytea@1.0.0:
+        resolution:
+            {
+                integrity: sha512-xy3pmLuQqRBZBXDULy7KbaitYqLcmxigw14Q5sj8QBVLqEwXfeybIKVWiqAXTlcvdvb0+xkOtDbfQMOf4lST1w==,
+            }
+        engines: { node: ">=0.10.0" }
+
+    postgres-date@1.0.7:
+        resolution:
+            {
+                integrity: sha512-suDmjLVQg78nMK2UZ454hAG+OAW+HQPZ6n++TNDUX+L0+uUlLywnoxJKDou51Zm+zTCjrCl0Nq6J9C5hP9vK/Q==,
+            }
+        engines: { node: ">=0.10.0" }
+
+    postgres-interval@1.2.0:
+        resolution:
+            {
+                integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==,
+            }
+        engines: { node: ">=0.10.0" }
+
+    process-nextick-args@2.0.1:
+        resolution:
+            {
+                integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==,
+            }
+
+    readable-stream@2.3.8:
+        resolution:
+            {
+                integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==,
+            }
+
+    safe-buffer@5.1.2:
+        resolution:
+            {
+                integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==,
+            }
+
+    split2@4.2.0:
+        resolution:
+            {
+                integrity: sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==,
+            }
+        engines: { node: ">= 10.x" }
+
+    string_decoder@1.1.1:
+        resolution:
+            {
+                integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==,
+            }
+
+    typescript@5.9.2:
+        resolution:
+            {
+                integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==,
+            }
+        engines: { node: ">=14.17" }
+        hasBin: true
+
+    undici-types@7.12.0:
+        resolution:
+            {
+                integrity: sha512-goOacqME2GYyOZZfb5Lgtu+1IDmAlAEu5xnD3+xTzS10hT0vzpf0SPjkXwAw9Jm+4n/mQGDP3LO8CPbYROeBfQ==,
+            }
+
+    universalify@2.0.1:
+        resolution:
+            {
+                integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==,
+            }
+        engines: { node: ">= 10.0.0" }
+
+    unzipper@0.12.3:
+        resolution:
+            {
+                integrity: sha512-PZ8hTS+AqcGxsaQntl3IRBw65QrBI6lxzqDEL7IAo/XCEqRTKGfOX56Vea5TH9SZczRVxuzk1re04z/YjuYCJA==,
+            }
+
+    util-deprecate@1.0.2:
+        resolution:
+            {
+                integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==,
+            }
+
+    xtend@4.0.2:
+        resolution:
+            {
+                integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==,
+            }
+        engines: { node: ">=0.4" }
+
+snapshots:
+    "@types/node@24.5.2":
+        dependencies:
+            undici-types: 7.12.0
+
+    "@types/pg-copy-streams@1.2.5":
+        dependencies:
+            "@types/node": 24.5.2
+            "@types/pg": 8.15.5
+
+    "@types/pg@8.15.5":
+        dependencies:
+            "@types/node": 24.5.2
+            pg-protocol: 1.10.3
+            pg-types: 2.2.0
+
+    "@types/unzipper@0.10.11":
+        dependencies:
+            "@types/node": 24.5.2
+
+    bluebird@3.7.2: {}
+
+    core-util-is@1.0.3: {}
+
+    dotenv@17.2.2: {}
+
+    duplexer2@0.1.4:
+        dependencies:
+            readable-stream: 2.3.8
+
+    fs-extra@11.3.2:
+        dependencies:
+            graceful-fs: 4.2.11
+            jsonfile: 6.2.0
+            universalify: 2.0.1
+
+    graceful-fs@4.2.11: {}
+
+    inherits@2.0.4: {}
+
+    isarray@1.0.0: {}
+
+    jsonfile@6.2.0:
+        dependencies:
+            universalify: 2.0.1
+        optionalDependencies:
+            graceful-fs: 4.2.11
+
+    node-int64@0.4.0: {}
+
+    pg-cloudflare@1.2.7:
+        optional: true
+
+    pg-connection-string@2.9.1: {}
+
+    pg-copy-streams@7.0.0: {}
+
+    pg-int8@1.0.1: {}
+
+    pg-pool@3.10.1(pg@8.16.3):
+        dependencies:
+            pg: 8.16.3
+
+    pg-protocol@1.10.3: {}
+
+    pg-types@2.2.0:
+        dependencies:
+            pg-int8: 1.0.1
+            postgres-array: 2.0.0
+            postgres-bytea: 1.0.0
+            postgres-date: 1.0.7
+            postgres-interval: 1.2.0
+
+    pg@8.16.3:
+        dependencies:
+            pg-connection-string: 2.9.1
+            pg-pool: 3.10.1(pg@8.16.3)
+            pg-protocol: 1.10.3
+            pg-types: 2.2.0
+            pgpass: 1.0.5
+        optionalDependencies:
+            pg-cloudflare: 1.2.7
+
+    pgpass@1.0.5:
+        dependencies:
+            split2: 4.2.0
+
+    postgres-array@2.0.0: {}
+
+    postgres-bytea@1.0.0: {}
+
+    postgres-date@1.0.7: {}
+
+    postgres-interval@1.2.0:
+        dependencies:
+            xtend: 4.0.2
+
+    process-nextick-args@2.0.1: {}
+
+    readable-stream@2.3.8:
+        dependencies:
+            core-util-is: 1.0.3
+            inherits: 2.0.4
+            isarray: 1.0.0
+            process-nextick-args: 2.0.1
+            safe-buffer: 5.1.2
+            string_decoder: 1.1.1
+            util-deprecate: 1.0.2
+
+    safe-buffer@5.1.2: {}
+
+    split2@4.2.0: {}
+
+    string_decoder@1.1.1:
+        dependencies:
+            safe-buffer: 5.1.2
+
+    typescript@5.9.2: {}
+
+    undici-types@7.12.0: {}
+
+    universalify@2.0.1: {}
+
+    unzipper@0.12.3:
+        dependencies:
+            bluebird: 3.7.2
+            duplexer2: 0.1.4
+            fs-extra: 11.3.2
+            graceful-fs: 4.2.11
+            node-int64: 0.4.0
+
+    util-deprecate@1.0.2: {}
+
+    xtend@4.0.2: {}

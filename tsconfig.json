@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "es2022",
+        "module": "nodenext",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "strict": true,
+        "allowJs": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true,
+        // "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "lib": ["es2022"]
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
