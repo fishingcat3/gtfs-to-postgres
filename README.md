@@ -2,6 +2,7 @@
 
 Made with **Nodejs** and **TypeScript**\
 For storing TfNSW GTFS bundles in a PostgreSQL database
+[TfNSW Open Data Catalogue](https://opendata.transport.nsw.gov.au/data/dataset/)
 
 Modify columns and tables to download in: `/src/tables.ts`\
 Modify GTFS endpoints in: `/src/Endpoints.ts`

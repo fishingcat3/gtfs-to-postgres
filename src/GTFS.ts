@@ -171,14 +171,14 @@ export class GtfsDataset {
                     .split(",")
                     .map((name) => name.trim().replace(/"/g, ""))
                     .filter((name) => tableColumns.has(name));
-                await client.query(
-                    `CREATE TABLE ${tmpSchema}.${table.name} (${columns
-                        .map((y) => `${y} ${tableColumns.get(y)}`)
-                        .join(", ")});`,
-                );
+
+                // prettier-ignore
+                const sql = `CREATE TABLE ${tmpSchema}.${table.name} (${columns.map((y) => `${y} ${tableColumns.get(y)}`).join(", ")});`;
+                await client.query(sql);
                 fileHeaders.set(f.path, columns);
             }
 
+            const fileTables = [];
             for (const f of dir.files) {
                 const table = tables.find((x) => x.file === f.path);
                 if (!table) continue;
@@ -186,27 +186,36 @@ export class GtfsDataset {
                 if (!columns) continue;
 
                 const stream = f.stream();
-                const copyStream = client.query(
-                    copyFrom(
-                        `COPY ${tmpSchema}.${table.name} (${columns.join(
-                            ",",
-                        )}) FROM STDIN WITH (FORMAT CSV, HEADER, DELIMITER ',', NULL '', FORCE_NULL(${columns.join(
-                            ",",
-                        )}))`,
-                    ),
-                );
+                // prettier-ignore
+                const sql = `COPY ${tmpSchema}.${table.name} (${columns.join(
+                    ",",
+                )}) FROM STDIN WITH (FORMAT CSV, HEADER, DELIMITER ',', NULL '', FORCE_NULL(${columns.join(",")}))`;
+                const copyStream = client.query(copyFrom(sql));
                 await Pipeline(stream as any, copyStream as any);
+
+                fileTables.push({ table, schema: tmpSchema, name: table.name });
             }
+
+            for (const { table, schema, name } of fileTables) {
+                if (!table) continue;
+                if (table.indexes)
+                    for (const index of table.indexes) {
+                        // prettier-ignore
+                        const sql = `CREATE INDEX "${index.idx}_${table.name}_${Date.now()}" ON "${schema}"."${name}" (${index.column});`;
+                        await client.query(sql);
+                    }
+            }
+
             await client.query("COMMIT");
             await client.query("BEGIN");
             await client.query(`DROP SCHEMA IF EXISTS ${this.gtfsSchema} CASCADE`);
             await client.query(`ALTER SCHEMA ${tmpSchema} RENAME TO ${this.gtfsSchema}`);
             await client.query("COMMIT");
+
+            await fs.rm(path.dirname(zipPath), { recursive: true, force: true });
         } catch (e) {
             await client.query("ROLLBACK");
             throw e;
-        } finally {
-            await fs.rm(path.dirname(zipPath), { recursive: true, force: true });
         }
     }
 }

@@ -33,8 +33,8 @@ const SydneyHeaders: HttpHeaders = {
         if (zipPath) {
             console.log(`Downloaded GTFS zip for ${name}: ${zipPath}`);
             await Gtfs.loadTables(GtfsClient, zipPath);
-            console.log(`GTFS tables loaded for ${name}`);
-        } else console.log(`GTFS already up to date for ${name}`);
+            console.log(`GTFS tables loaded for ${name}\n`);
+        } else console.log(`GTFS already up to date for ${name}\n`);
 
         GtfsClient.release();
     }

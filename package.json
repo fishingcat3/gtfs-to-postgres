@@ -6,7 +6,7 @@
     "module": "es2022",
     "scripts": {
         "build": "tsc;",
-        "start": "node dist/index.js"
+        "start": "node dist/index.js;"
     },
     "keywords": [],
     "author": "",
