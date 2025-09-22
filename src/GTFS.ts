@@ -141,6 +141,7 @@ export class GtfsDataset {
         const tmpSchema = `${this.gtfsSchema}_tmp_${Date.now()}`;
         try {
             await client.query("BEGIN");
+            await client.query(`CREATE EXTENSION IF NOT EXISTS citext;`);
             await client.query(`CREATE SCHEMA ${tmpSchema}`);
             const dir = await unzipper.Open.file(zipPath);
 
